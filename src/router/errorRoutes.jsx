@@ -1,5 +1,6 @@
 import { lazy } from "react";
 
+const PageNotFound = lazy(() => import("../pages/Error/PageNotFound"));
 const ErrorEle = <div>Oops! There was an error.</div>;
 
 export const ERROR_PATH = {
@@ -9,7 +10,7 @@ export const ERROR_PATH = {
 export const ERROR_ROUTES = [
 	{
 		path: "*",
-		element: lazy(() => import("../pages/Error/PageNotFound")),
+		element: <PageNotFound />,
 		errorElement: ErrorEle,
 	},
 ];

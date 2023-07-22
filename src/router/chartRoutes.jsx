@@ -1,6 +1,7 @@
-import Recharts from "../Pages/Recharts/Recharts";
-import Layout from "../components/Layout/Layout";
+import { lazy } from "react";
 
+const Recharts = lazy(() => import("../Pages/Recharts/Recharts"));
+const Layout = lazy(() => import("../components/Layout/Layout"));
 const ErrorEle = <div>Oops! There was an error.</div>;
 
 export const RECHART_PATH = {

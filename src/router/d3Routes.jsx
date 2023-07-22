@@ -1,6 +1,7 @@
-import D3 from "../Pages/D3/D3";
-import Layout from "../components/Layout/Layout";
+import { lazy } from "react";
 
+const D3 = lazy(() => import("../Pages/D3/D3"));
+const Layout = lazy(() => import("../components/Layout/Layout"));
 const ErrorEle = <div>Oops! There was an error.</div>;
 
 export const D3_PATH = {
